@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- lightgallery css -->
+    <link rel="stylesheet" type="text/css" href="lightgallery/css/lightgallery.min.css">
+    <!-- lightgallery js -->
+    <script src="lightgallery/js/picturefill.min.js"></script>
+    <script src="lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="lightgallery/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#lightgallery').lightGallery();
+      });
+    </script>
+    <style type="text/css">
+      a.gallery-img{
+        position: relative;
+      }
+      a .gallery-poster {
+        background-color: rgba(255,255,255, 0.1);
+        position: absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+        transition: background-color 0.15s ease 0s;
+      }
+      a .gallery-poster > img {
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: opacity 0.3s ease 0s;
+        -o-transition: opacity 0.3s ease 0s;
+        transition: opacity 0.3s ease 0s;
+      }
+      a:hover .gallery-poster > img {
+        opacity: 1;
+      }
+      .gallery-item > a:hover > img{
+        transform: scale3d(1.01, 1.01, 1.01);
+      }
+    </style>
+ 
+    <title>Bootstrap gallery</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4">電子相簿</h1>
+      <div class="row" id="lightgallery">
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-src="img/A01.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A01.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A02.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A02.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A03.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A03.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A04.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A04.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-src="img/A05.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A05.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A06.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A06.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A07.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A07.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A08.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A08.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-src="img/A09.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A09.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A10.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A10.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A11.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A11.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A12.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A12.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-src="img/A13.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A13.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A14.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A14.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A15.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A15.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6  mb-4 gallery-item" data-src="img/A16.jpg" data-sub-html="<h4>標題</h4><p>......</p>">
+          <a href="#" class="d-block h-100 gallery-img">
+            <img src="img/A16.jpg" alt="A01" class="img-fluid img-thumbnail">
+            <div class="gallery-poster">
+              <img src="img/zoom.png">
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+ 
+  </body>
+</html>
