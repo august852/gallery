@@ -7,162 +7,145 @@
  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- lightgallery css -->
-    <link rel="stylesheet" type="text/css" href="lightgallery/css/lightgallery.css">
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    
-    <!-- lightgallery js -->
-    <script src="lightgallery/js/picturefill.min.js"></script>
-    <script src="lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="lightgallery/js/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-          $('#lightgallery').lightGallery();
-      });
-    </script>
  
-    <title>電子相薄</title>
+    <title>Bootstrap 電子相簿</title>
+    <!--  -->
+    <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+   <script type='text/javascript' src='unitegallery/themes/tilesgrid/ug-theme-tilesgrid.js'></script>
+    <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+    jQuery("#gallery").unitegallery();
+
+        });
+
+        
+      </script>
   </head>
   <body>
     <div class="container">
-      <h1 class="my-4 text-center text-lg-left">電子相簿</h1>
-      <div class="row" id="lightgallery">
-      <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A01.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A01.jpg" alt=A01.jpg"">
-          </a>
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <div id="gallery" style="display:none;">
+              
+              <img alt="Lemon Slice(tile1.jpg)"
+                   src="img/A01.jpg"
+                   data-image="img/A01.jpg"
+                   data-description="This is a Lemon Slice"
+                   style="">
+
+              <img alt="Peppers"
+                   src="img/A02.jpg"
+                   data-image="img/A02.jpg"
+                   data-description="Those are peppers"
+                   style="display:none">
+
+              <img alt="Keys"
+                   src="img/A03.jpg"
+                   data-image="img/A03.jpg"
+                   data-description="Those are keys"
+                   style="display:none">
+
+              <img alt="Friuts in cup"
+                   src="img/A04.jpg"
+                   data-image="img/A04.jpg"
+                   data-description="Those are friuts in a cup"
+                   style="display:none">
+
+              <img alt="Yellow Flowers"
+                   src="img/A05.jpg"
+                   data-image="img/A05.jpg"
+                   data-description="Those are yellow flowers"
+                   style="display:none">
+
+              <img alt="Butterfly"
+                   src="img/A06.jpg"
+                   data-image="img/A06.jpg"
+                   data-description="This is butterfly"
+                   style="display:none">
+
+              <img alt="Boat"
+                   src="img/A07.jpg"
+                   data-image="img/A07.jpg"
+                   data-description="This is a boat"
+                   style="display:none">
+
+              <img alt="Woman"
+                   src="img/A08.jpg"
+                   data-image="img/A08.jpg"
+                   data-description="This is a woman"
+                   style="display:none">
+
+              <img alt="Cup Of Coffee"
+                   src="img/A09.jpg"
+                   data-image="img/A09.jpg"
+                   data-description="This is cup of coffee"
+                   style="display:none">
+
+              <img alt="Iphone Back"
+                   src="img/A10.jpg"
+                   data-image="img/A10.jpg"
+                   data-description="This is iphone back"
+                   style="display:none">
+              <img alt="Lemon Slice"
+                   src="img/A11.jpg"
+                   data-image="img/A11.jpg"
+                   data-description="This is a Lemon Slice"
+                   style="display:none">
+
+              <img alt="Peppers"
+                   src="img/A12.jpg"
+                   data-image="img/A12.jpg"
+                   data-description="Those are peppers"
+                   style="display:none">
+
+              <img alt="Keys"
+                   src="img/A13.jpg"
+                   data-image="img/A13.jpg"
+                   data-description="Those are keys"
+                   style="display:none">
+
+              <img alt="Friuts in cup"
+                   src="img/A14.jpg"
+                   data-image="img/A14.jpg"
+                   data-description="Those are friuts in a cup"
+                   style="display:none">
+
+              <img alt="Yellow Flowers"
+                   src="img/A15.jpg"
+                   data-image="img/A15.jpg"
+                   data-description="Those are yellow flowers"
+                   style="display:none">
+
+              <img alt="Butterfly"
+                   src="img/A16.jpg"
+                   data-image="img/A16.jpg"
+                   data-description="This is butterfly"
+                   style="display:none">
+
+              <img alt="Boat"
+                   src="img/A17.jpg"
+                   data-image="img/A17.jpg"
+                   data-description="This is a boat"
+                   style="display:none">
+
+              <img alt="Woman"
+                   src="img/A18.jpg"
+                   data-image="img/A18.jpg"
+                   data-description="This is a woman"
+                   style="display:none">
+                 
+           </div>
+          
         </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A02.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A02.jpg" alt=A02.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A03.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A03.jpg" alt=A03.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A04.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A04.jpg" alt=04.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A05.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A05.jpg" alt=A05.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A06.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A06.jpg" alt=A06.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A07.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A07.jpg" alt=A08.jpg"">
-          </a>
-        </div>
-        <!-- item end --><!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A08.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A08.jpg" alt=A08.jpg"">
-          </a>
-        </div>
-        <!-- item end --><!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A09.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A09.jpg" alt=A09.jpg"">
-          </a>
-        </div>
-        <!-- item end --><!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A10.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A10.jpg" alt=A10.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A11.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A11.jpg" alt=A11.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A12.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A12.jpg" alt=A12.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A13.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A13.jpg" alt=A13.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A14.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A14.jpg" alt=A14.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A15.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A15.jpg" alt=A15.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A16.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A16.jpg" alt=A16.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A17.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A17.jpg" alt=A17.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A18.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A18.jpg" alt=A18.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-        <!-- item begin -->
-        <div class="col-lg-3 col-md-4 col-sm-6" data-src="img/A19.jpg" data-sub-html="<h4>愛</h4>">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/A19.jpg" alt=A19.jpg"">
-          </a>
-        </div>
-        <!-- item end -->
-       </div>
+      </div>
     </div>
   </body>
 </html>
